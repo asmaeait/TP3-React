@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# TP3 — React : Navigation, Rendu conditionnel et Ressources
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Objectifs
 
-In the project directory, you can run:
+- Mettre en place la navigation avec React Router
+- Utiliser le rendu conditionnel
+- Afficher des listes avec map()
+- Intégrer des images et du CSS
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+npm start
+```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Structure
 
-### `npm run build`
+<img width="705" height="788" alt="image" src="https://github.com/user-attachments/assets/c4879e50-164f-4558-9a8a-3126aed48163" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Ce que j'ai fait
 
-### `npm run eject`
+### Navigation
+Mise en place de React Router avec 3 pages : Accueil, À propos et Contact. Chaque page a sa propre route et les liens ne rechargent pas la page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Rendu conditionnel
+Le composant Connexion affiche un message différent selon si l'utilisateur est connecté ou non. Le composant Notifications affiche un message seulement si notifications > 0.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Listes dynamiques
+ListeTaches affiche mes tâches d'apprentissage React avec leur statut. ListeCourses reçoit un tableau en props et l'affiche avec map().
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Images et médias
+Galerie affiche 3 images importées depuis src. Logo affiche l'image du portfolio.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Styling CSS
+Mise en page avec des cartes blanches, navigation stylisée et boutons violets.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Le resultat
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+https://github.com/user-attachments/assets/5e096c17-67aa-4cef-8487-aa0a0a529350
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
